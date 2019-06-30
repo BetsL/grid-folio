@@ -1,0 +1,132 @@
+
+/* ---------- GENERAL/ZINE SETUP ---------- */
+
+body {
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    margin: 20px;
+}
+
+.magazine {
+    background: #e5e5e5;
+    display: grid;
+    grid-template-rows: 130px 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    height: 800px;
+    outline: 6px solid #121219;
+    width: 95vw;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+    align-items: end;
+    /*background: #f4d434;*/
+    background: #222;
+    border-right: 5px solid #121219;
+    border-bottom: 5px solid #121219;
+    color: #f5f5f5;
+    display: grid;
+    font-weight: bold;
+    font-size: calc(10px + 2.6vw);
+    grid-row: 1;
+    grid-column: 1 / 3;
+    justify-content: start;
+    padding-left: 20px;
+    text-transform: uppercase;
+    z-index: 1;   
+}
+
+/* ---------- IMAGE ---------- */
+.image {
+    background: url(img/synthwave.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 / 3;
+    grid-column: 2 / 5;
+}
+
+/* ---------- CONTENT ---------- */
+.content1 {
+    display: block;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    overflow: hidden;
+}
+
+
+.content2 {
+    /*align-items: start;*/
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content1, .content2 {
+    font-size: 18px;
+    padding: 20px 20px;
+    /*font-size: 14px;*/
+}
+
+/* ---------- QUOTE ---------- */
+.quote {
+    align-self: end;
+    background: rgba(0,0,0,0.5);
+    border-left: 10px solid #e5d54f;
+    bottom: 8%;
+    color: #e5d54f;
+    font-size: calc(12px + 1.1vw);
+    grid-row: 2;
+    grid-column: 4;
+    justify-content: start;
+    padding: 10px;
+    position: relative;
+    right: 125px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* ---------- CONNECTION TO COLLECTION ---------- */
+.invite {
+    background: purple;
+    border: 3px solid #f4d434;
+    display: flex;
+      /*align-items: flex-start;
+      justify-content: flex-start;*/
+    font-size: calc(12px + 1.6vw);
+    font-style: italic;
+    font-weight: bold;
+    grid-column: 4;
+    grid-row: 3;
+    height: 66%;
+    /*margin-left: 35px;*/
+    padding-left: 15px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    width: 85%;
+}
+
+.emph {
+    transform: scaleY(1.5);
+    white-space: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

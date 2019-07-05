@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barriecito|IM+Fell+DW+Pica+SC|Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Roboto+Mono&display=swap');
 
 body {
     color: #222;
@@ -25,14 +27,13 @@ body {
 /* ---------- TITLE ---------- */
 .title {
     align-items: end;
-    /*background: #f4d434;*/
     background: #111;
     border-right: 1px solid #f5f5f5;
     border-bottom: 1px solid #f5f5f5;
     color: #d3d3d3;
     display: grid;
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-weight: bold;
+    font-family: 'Barriecito', cursive;
+    font-weight: normal;
     font-size: calc(10px + 2.6vw);
     grid-row: 1;
     grid-column: 1 / 3;
@@ -45,11 +46,10 @@ body {
 
 /* ---------- IMAGES ---------- */
 .image {
-    background-image: url(img/rocket.png), url(img/synthwave.jpg);
-    background-position: relative, left center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 45%, cover;
-    /*box-shadow: 5px 5px 36px 5px #000000;*/
+    background-image: url(img/synthwave.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-row: 1 / 3;
     grid-column: 2 / 5;
     margin: 0 0 20px 20px;
@@ -57,7 +57,6 @@ body {
 }
 
 .drawing {
-    /*background:rgba(0,0,0,0.7);*/
     background-image: url(img/mebygv.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -78,7 +77,6 @@ body {
     border-left: 10px solid #e5d54f;
     bottom: 8%;
     color: #e5d54f;
-    /*font-family: 'Josefin Sans', sans-serif;*/
     font-size: calc(12px + 1.1vw);
     grid-row: 2;
     grid-column: 4;
@@ -92,9 +90,7 @@ body {
 
 /* ---------- CONTENT ---------- */
 .content1 {
-
     box-shadow: 5px 5px 36px 5px #000000;
-
     display: block;
     font-family: 'Josefin Sans', sans-serif;
     grid-row: 2 / 4;
@@ -134,24 +130,19 @@ body {
     grid-column: 2 / 5;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
-    /*width: 95%;*/
     text-align: right;
     z-index: 2;
-    -ms-transform: rotate(-1deg); /* IE 9 */
-    -webkit-transform: rotate(-1deg); /* Safari 3-8 */
-    transform: rotate(-1deg);
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg);
 }
 
 .content1, .content2 {
-    /*background-color: #f9f7f1;*/
-    background-color: #d6d9dc;
-    
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    background-color: #a9a9a9;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
     overflow: scroll;
     padding: 20px 20px;
-    /*font-size: 14px;*/
-
 }
 
 
@@ -161,27 +152,21 @@ body {
     background: #d3d3d3;
     border-bottom: 1px solid #222;
     border-right: 5px solid #222;
-    /*border: 3px solid #f4d434;*/
-    /*border: 1px solid #f5f5f5;*/
     color: #111;
     display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-    /*font-family: 'Josefin Sans', sans-serif;*/
     font-size: calc(12px + 1.6vw);
     font-style: italic;
     font-weight: bold;
     grid-column: 4;
     grid-row: 3;
     height: 66%;
-    /*margin-left: 35px;*/
-    /*padding-left: 15px;
-    padding-top: 25px;*/
     padding-bottom: 20px;
     padding-right: 40px;
     text-align: right;
     text-transform: uppercase;
-    width: 70%;
+    width: 75%;
     z-index: 2;
 }
 
@@ -192,6 +177,18 @@ body {
 
 /* ---------- MEDIA QUERIES ---------- */
 
+@media only screen and (min-width: 240px) and (max-width: 479px) {
+
+    .quote {
+      left: 75px;
+    }
+
+    .drawing {
+      background-size: 125%;
+    }
+
+}
+
 @media only screen and (min-width: 240px) and (max-width: 750px) {
 
   body {
@@ -199,7 +196,7 @@ body {
   }
 
   .magazine {
-      grid-template-rows: 120px 4fr 3fr 3fr 3.5fr;/*130px 2fr 1fr*/
+      grid-template-rows: 120px 4fr 3fr 3fr 3fr 0.5fr;/*130px 2fr 1fr*/
       grid-template-columns: 95vw; /*1.5fr 1fr 1fr 1.5fr*/
       height: 1800px;
   }
@@ -211,10 +208,10 @@ body {
   }
 
   .image {
-      background-image: url(img/rocket.png), url(img/synthwave.jpg);
-      background-position: left center, left center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: 33%, auto;
+      background-image: url(img/synthwave.jpg);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: auto;
       grid-row: 2;
       grid-column: 1;
       margin: 0;
@@ -227,7 +224,7 @@ body {
       font-size: calc(12px + 2.3vw);
       grid-row: 2;
       grid-column: 1;
-      left: 145px;
+      left: 125px;
       width: 66%;
   }
 
@@ -241,12 +238,8 @@ body {
       grid-row: 4;
       grid-column: 1;
       padding-top: 50px;
-
       box-shadow: 5px 5px 36px 5px #000000;
-
       display: block;
-      font-family: 'Josefin Sans', sans-serif;
-
       background-image: radial-gradient(at top right #00ff00, gray);
       text-align: left;
       z-index: 2;
@@ -258,11 +251,10 @@ body {
   }
 
   .drawing {
-      /*background:rgba(0,0,0,0.7);*/
       background-image: url(img/mebygv.jpg);
       background-position: auto;
       background-repeat: no-repeat;
-      background-size: 125%;
+      background-size: contain;
 
       grid-row: 5;
       grid-column: 1;
@@ -276,24 +268,17 @@ body {
       background: #d3d3d3;
       border-bottom: 1px solid #222;
       border-right: 5px solid #222;
-      /*border: 3px solid #f4d434;*/
-      /*border: 1px solid #f5f5f5;*/
+
       color: #111;
       display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-      /*font-family: 'Josefin Sans', sans-serif;*/
       font-size: calc(12px + 1.6vw);
       font-style: italic;
       font-weight: bold;
       grid-column: 1;
-      grid-row: 5;
-      height: 25%;
-      /*margin-left: 35px;*/
-      /*padding-left: 15px;
-      padding-top: 25px;*/
-      /*padding-bottom: 20px;
-      padding-right: 40px;*/
+      grid-row: 6;
+      height: 66%;
       margin: 0 auto;
       text-align: right;
       text-transform: uppercase;

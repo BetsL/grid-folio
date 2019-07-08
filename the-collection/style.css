@@ -9,7 +9,9 @@ body {
 
 body {
     background-color: #f9f7f1;
+    /*background: #e5e5e5;*/
     color: #2f2f2f;
+    /*color: #222;*/
     font-family: 'Droid Serif', serif;
     font-size: 16px; 
     margin: 30px 2% 0 2%;
@@ -35,10 +37,11 @@ p {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 7em;
+    font-size: 8em;
     line-height: 72px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .subheading {
@@ -53,15 +56,30 @@ h1 {
 }
 
 .tag {
-    border: 3px double #2f2f2f;
+    border: 3px solid #2f2f2f;
     display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
-    line-height: 20px;
+    /*line-height: 20px;*/
     padding: 10px 15px 10px 15px;
     /*transform: scaleY(1.5);*/
-    /*width: 20%;*/
+    width: 33%;
+}
+
+.tag span {
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+.emph {
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    /*color: purple;*/
+    /*font-size: 4em;*/
+    font-style: italic;
+    /*font-weight: bold;*/
+    padding: 11px;
 }
 
 h2 {
@@ -70,9 +88,9 @@ h2 {
       align-items: center;
       flex-flow: row wrap;
     font-size: 4em;
-    padding-left: 2%;
+    /*padding-left: 2%;*/
     transform: scaleY(1.8);
-    /*width: 75%;*/
+    width: 60%;
 }
 
 /* ---------- CONTENT ---------- */
@@ -90,6 +108,8 @@ h2 {
     /*word-spacing: -.31em;*/
 }
 
+
+/* ---------- COLUMNS, GENERAL ----------*/
 .columns {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -107,28 +127,29 @@ h2 {
     margin-bottom: 50px;
     transition: all .7s;
 }
+
 .column + .column { 
   border-left: 1px solid #2f2f2f;
   padding-left: 15px;
 }
-.column .headline{
+
+/* ---------- COLUMNS, HEADLINES ---------- */
+.column .headline {
     text-align: center;
     line-height: normal;
     font-family: 'Playfair Display', serif;
     display: block;
     margin: 0 auto;
-
-
 }
-.column .headline.hl1{
+
+.column .headline.hl1 {
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
     padding: 10px 0 10px 0;
-
 }
 
-.column .headline.hl2{
+.column .headline.hl2 {
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -136,7 +157,7 @@ h2 {
     padding: 10px 0 10px 0;
 }
 
-.column .headline.hl2:before{
+.column .headline.hl2:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -144,30 +165,32 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-.column .headline.hl2:after{
+
+.column .headline.hl2:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
     height: 13px;
     display: block;
     margin: 0 auto;
-
 }
 
-.column .headline.hl3{
+.column .headline.hl3 {
     font-weight: 400;
     font-style: italic;
     font-size: 36px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.column .headline.hl4{
+
+.column .headline.hl4 {
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.column .headline.hl4:before{
+
+.column .headline.hl4:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -175,73 +198,18 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-.column .headline.hl4:after{
+
+.column .headline.hl4:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
     height: 10px;
     display: block;
     margin: 0 auto;
-
 }
 
-.column .headline.hl5{
-    font-weight: 400;
-    font-size: 42px;
-    text-transform: uppercase;
-    font-style: italic;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl6{
-    font-weight: 400;
-    font-size: 18px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl6:before{
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 7px;
-    display: block;
-    margin: 0 auto;
-}
-.column .headline.hl6:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 10px;
-    display: block;
-    margin: 0 auto;
-
-}
-.column .headline.hl7{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    display: block;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl8{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl9{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl10{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .citation{
+/* ---------- COLUMNS, EXTRAS ----------*/
+.column .citation {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     line-height: 44px;
@@ -251,9 +219,9 @@ h2 {
     display: block;
     margin: 40px 0 40px 0;
     font-feature-settings: "liga", "dlig";
-
 }
-.column .citation:before{
+
+.column .citation:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -261,7 +229,8 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-.column .citation:after{
+
+.column .citation:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -269,54 +238,19 @@ h2 {
     display: block;
     margin: 0 auto;
 }
+
 .column .figure {
     margin: 0 0 20px;
 }
-.column .figcaption{
+
+.column .figcaption {
   font-style: italic;
   font-size: 12px;
 }
+
 .media {
     -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
     mix-blend-mode: multiply;
     width: 100%;
 }
-/*________________________________________________________________________________________________________________________________*/
-/*MEDIAQUERIES*/
-/*@media only all and (max-width: 1300px) {
-    .weather-forecast {
-        display: none;
-    }
-
-}
-@media only all and (max-width: 1200px) {
-    .column{
-        width: 31%;
-    }
-
-}
-    @media only all and (max-width: 900px) {
-    .column{
-        width: 47%;
-    }
-
-}
-@media only all and (max-width: 600px) {
-    .column{
-        width: 100%;
-    }
-  .column + .column {
-        border-left: none;
-        border-bottom: 1px solid #2f2f2f;
-  }
-    header{
-        max-width: 320px;
-        font-size: 60px;
-        line-height: 54px;
-        overflow: hidden;
-    }
-
-}*/
-
-

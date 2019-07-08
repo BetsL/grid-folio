@@ -168,6 +168,11 @@ body {
     white-space: wrap;
 }
 
+.invite a {
+    text-decoration: none;
+    color: #111;
+}
+
 
 /* ---------- MEDIA QUERIES ---------- */
 

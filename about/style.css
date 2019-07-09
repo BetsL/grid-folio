@@ -163,6 +163,11 @@ body {
     z-index: 2;
 }
 
+.invite:hover {
+    background-color: #e5d54f;
+    transition: .7s;
+}
+
 .emph {
     transform: scaleY(1.5);
     white-space: wrap;

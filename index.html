@@ -4,32 +4,36 @@
 	<title>Cover Story</title>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/cf4adf0ae9.js'></script>
 </head>
 <body>
 
 	<div class='page'>
 		
-		<header>
-	      	<div class='content-wrapper'>
-	      		<div class='dropdown'>
-	        		<h1 id='social'>Elizabeth Harkins</h1>
-	        			<div class='social-content'>
-	        				<a href='https://www.linkedin.com/in/emharkins/' target='_blank'>in</a>
-	        				<a href='https://twitter.com/_lizzith' target='_blank'>chirp</a>
-	        				<a href='https://github.com/BetsL' target='_blank'>hub</a>
-	        			</div>
-	        	</div>
-	          	<nav class='topnav' id='myTopnav'>
-	              	<a href='about/index.html' id='go'>About</a>
-	                <a href='the-collection/index.html' id='go'>The Collection</a>
-	                <a href='javascript:void(0);' class='icon' onclick='navCollapse()'>
-    					<i class='fa fa-bars'></i>
-  					</a>
-	          	</nav>
-	      	</div>
-	  	</header>
+		<nav class='navbar'>
+    		<span class='navbar-toggle' id='js-navbar-toggle'>
+            	<i class='fas fa-bars'></i>
+        	</span>
+    		<a href='https://www.betsthewebdev.com' class='logo'>Elizabeth Harkins</a>
+    		<ul class='main-nav' id='js-menu'>
+      			<li>
+        			<a href='https://www.linkedin.com/in/emharkins/' target='_blank' class='nav-links'>in</a>
+      			</li>
+      			<li>
+        			<a href='https://twitter.com/_lizzith' target='_blank' class='nav-links'>chirp</a>
+      			</li>
+      			<li>
+        			<a href='https://github.com/BetsL' target='_blank' class='nav-links'>hub</a>
+      			</li>
+      			<li>
+        			<a href='about/index.html' class='nav-links'>About</a>
+      			</li>
+      			<li>
+        			<a href='the-collection/index.html' class='nav-links'>The Collection</a>
+      			</li>
+    		</ul>
+  		</nav>
 
 	  	<main>
 	  		<p><span id='output'></span></p>

@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 /* --- NAV --- */
@@ -58,13 +58,19 @@ nav ul li {
 }
 
 nav ul li a {
+	border-bottom: 1px solid #b19cd9;
 	color: inherit;
+	opacity: 1;
+	padding: .8em;
 	text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: #b19cd9;
+    background-color: #9921e8;
+	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+	opacity: 2;  /* for mouseover effects on hover */
+	-webkit-transition: .7s; /* on hover */
+	transition: .7s;
 }
 
 /* ---------- RANGE ---------- */
@@ -114,7 +120,9 @@ p {
   	width: 25px; /* set a specific slider handle width */
   	height: 25px; /* slider handle height */
   	border-radius: 50%;
-  	background: #b19cd9;
+  	/*background: #b19cd9;*/
+  	background-color: #9921e8;
+	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
   	cursor: pointer; /* cursor on hover */
 }
 
@@ -122,7 +130,9 @@ p {
   	width: 25px; /* set a specific slider handle width */
   	height: 25px; /* slider handle height */
   	border-radius: 50%;
-  	background: #b19cd9;
+  	/*background: #b19cd9;*/
+  	background-color: #9921e8;
+	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
   	cursor: pointer; /* cursor on hover */
 }
 

@@ -34,12 +34,16 @@ main {
 }
 
 .main-nav {
+	/*background-color: #bf3a30;
+	background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+  border: 1px solid rgba(0, 0, 0, 0.2);*/
   list-style-type: none;
   display: none;
 	position: absolute;
 		right: 0;
-		top: 100%;
-		width: 90%;
+		top: 66%;
+		width: 40%;
+	transition: 5s ease;
 }
 
 .nav-links,
@@ -183,6 +187,7 @@ p {
     justify-content: flex-end;
 
 		top: 5px;
+		width: 100%;
   }
 
   .main-nav li {

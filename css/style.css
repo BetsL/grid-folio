@@ -124,8 +124,8 @@ main {
 .topnav a:hover {
     background-color: #9921e8;
 	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
-	opacity: 2;  
-	-webkit-transition: .7s; 
+	opacity: 2;
+	-webkit-transition: .7s;
 	transition: .7s;
 
 	background-color: #ddd;
@@ -141,8 +141,9 @@ main {
   	font-size: 18px;
   	/*background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);*/
   	background-color: #9921e8;
-	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+		background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
   	border: 1px solid rgba(0, 0, 0, 0.2);
+		border-bottom: 1px solid #b19cd9;
   	padding-bottom: 10px;
   	width: 100%;
 }
@@ -191,8 +192,8 @@ p {
 		flex-flow: row wrap;
 	font-size: 1.1em;
 	margin: 0 auto;
-	height: 300px;
-	width: 60%;
+	height: 200px;
+	width: 66%;
 }
 
 .slidecontainer {
@@ -212,7 +213,7 @@ p {
 	width: 100%; /* full-width */
 	height: 5px; /* specified height */
 	border-radius: 5px;
-	background: #f5f5f5; 
+	background: #f5f5f5;
 	outline: none;
 	opacity: 0.7; /* for mouseover effects on hover */
 	-webkit-transition: .2s; /* on hover */
@@ -224,7 +225,7 @@ p {
 	opacity: 1; /* fully shown on mouse-over */
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
   	-webkit-appearance: none; /* override default look */
   	appearance: none;
@@ -297,8 +298,3 @@ p {
     color: rgba(255, 255, 255, 1);
   }
 }
-
-
-
-
-

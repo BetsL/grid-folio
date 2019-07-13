@@ -204,6 +204,7 @@ p {
   .logo:hover,
   .nav-links:hover {
     color: rgba(255, 255, 255, 1);
+		border-bottom: none;
   }
 
 	.tag h2 {

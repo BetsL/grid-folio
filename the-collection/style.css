@@ -12,7 +12,7 @@ body {
     background: #b19cd9;
     color: #222;
     font-family: 'Droid Serif', serif;
-    font-size: 16px; 
+    font-size: 16px;
     margin: 30px 2% 0 2%;
 }
 
@@ -137,7 +137,7 @@ h2 {
 }
 
 .three {
-    background: 
+    background:
         linear-gradient(
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
@@ -212,11 +212,11 @@ h2 {
     display: flex;
       align-items: center;
       justify-content: center;
-   
+
     grid-column: 4;
     grid-row: 3 / 4;
     height: 25%;
-   
+
     text-align: center;
     text-transform: uppercase;
     width: 40%;
@@ -574,7 +574,7 @@ h2 {
         text-align: center;
     }
 
-    .subheading {        
+    .subheading {
         padding: 12px 0 12px 0;
     }
 
@@ -663,14 +663,14 @@ h2 {
 
         position: relative;
             height: 115%;
-            bottom: -65px;
+            bottom: -75px;
    }
 
    .speech-bubble {
         grid-row: 7;
         grid-column: 1;
 
-        height: 16%;
+        height: 14%;
         width: 26%;
 
         left: 125px;
@@ -686,7 +686,7 @@ h2 {
         text-align: center;
     }
 
-    .subheading {        
+    .subheading {
         padding: 12px 0 12px 0;
     }
 
@@ -794,19 +794,3 @@ h2 {
         top: 85%;
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

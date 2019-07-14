@@ -569,7 +569,9 @@ h2 {
         grid-row: 5;
         grid-column: 4;
         top: 80%;
-        width: 45%;
+        height: 20%;
+        right: 150px;
+        width: 56%;
    }
 }
 

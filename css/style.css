@@ -41,8 +41,8 @@ main {
   display: none;
 	position: absolute;
 		right: 0;
-		top: 66%;
-		width: 40%;
+		top: 75%;
+		width: 100%;
 }
 
 .nav-links,
@@ -77,7 +77,10 @@ main {
 }
 
 .active {
-  display: block;
+  display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
 }
 
 /* ---------- RANGE ---------- */
@@ -98,7 +101,6 @@ p {
 	align-items: center;
 	flex-flow: column;
 	margin: 10vh auto;
-
 	width: 80%; /* width of outside container */
 }
 
@@ -107,7 +109,7 @@ p {
 	-webkit-appearance: none; /* override default CSS */
 	appearance: none;
 	width: 100%; /* full-width */
-	height: 5px; /* specified height */
+	height: 3px; /* specified height */
 	border-radius: 5px;
 	background: #f5f5f5;
 	outline: none;
@@ -165,7 +167,6 @@ p {
 		.tag h2 {
 			font-size: 12px;
 		}
-
 }
 
 @media screen and (min-width: 768px) {

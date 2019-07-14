@@ -198,6 +198,7 @@ h2 {
 
 .speech-bubble {
     font-family: 'Roboto Mono', monospace;
+    font-size: .9em;
     position: relative;
     background: #d3d3d3;
     border-radius: .4em;
@@ -408,8 +409,8 @@ h2 {
     }
 
     .speech-bubble {
-        right: 110px;
-        top: 70%;
+        right: 120px;
+        top: 75%;
     }
 }
 
@@ -454,8 +455,10 @@ h2 {
     }
 
     .speech-bubble {
-        right: 110px;
-        top: 70%;
+        font-size: .8em;
+        padding: auto 11px;
+        right: 120px;
+        top: 75%;
     }
 }
 
@@ -562,8 +565,11 @@ h2 {
    }
 
    .speech-bubble {
+        font-size: .8em;
         grid-row: 5;
         grid-column: 4;
+        top: 80%;
+        width: 45%;
    }
 }
 
@@ -663,13 +669,14 @@ h2 {
 
         position: relative;
             height: 115%;
-            bottom: -75px;
+            bottom: -85px;
    }
 
    .speech-bubble {
+        font-size: .8em;
         grid-row: 7;
         grid-column: 1;
-
+        padding: auto 1px;
         height: 14%;
         width: 26%;
 
@@ -784,6 +791,8 @@ h2 {
    }
 
    .speech-bubble {
+        font-size: .8em;
+
         grid-row: 7;
         grid-column: 1;
 
@@ -791,6 +800,6 @@ h2 {
         width: 20%;
 
         left: 60px;
-        top: 85%;
+        top: 90%;
    }
 }

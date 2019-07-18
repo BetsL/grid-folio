@@ -96,7 +96,6 @@ h2 {
     display: grid;
 }
 
-
 /* ---------- COLUMNS, GENERAL ----------*/
 .columns {
     border-bottom: 10px solid #2f2f2f;
@@ -449,7 +448,6 @@ h2 {
         margin: 10px 0 10px 0;
     }
 
-
     .image {
         bottom: 2%;
     }
@@ -576,6 +574,8 @@ h2 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
+
+    /* ---------- HEADING ---------- */
     h1 {
         font-size: 3.9em;
         margin-bottom: 10px;
@@ -688,6 +688,7 @@ h2 {
 }
 
 @media only screen and (min-width: 240px) and (max-width: 479px) {
+    /* ---------- HEADING ---------- */
     h1 {
         font-size: 2em;
         line-height: 42px;

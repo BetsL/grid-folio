@@ -67,6 +67,11 @@ main {
   	margin-left: 20px;
 }
 
+.far {
+	font-size: .9em;
+	padding: 0 8px;
+}
+
 .navbar-toggle {
   	position: absolute;
   	top: 13px;

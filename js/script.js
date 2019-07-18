@@ -1,9 +1,10 @@
+
 /* ---------- NAV ---------- */
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 navBarToggle.addEventListener('click', function() {
-  mainNav.classList.toggle('active');
+  	mainNav.classList.toggle('active');
 });
 
 /* ---------- SLIDER + STORY ---------- */
@@ -33,7 +34,7 @@ const values = ['Once there was a teacher.',
 			  'Thanks for reading and engaging with me!'];
 
 const input = document.getElementById('myStory'),
-   output = document.getElementById('output');
+   	output = document.getElementById('output');
 
 input.oninput = function(){
 	output.innerHTML = values[this.value];

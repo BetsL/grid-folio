@@ -1,5 +1,7 @@
 # grid-folio
-Grid goes retro ... // Exploring magazine and newspaper layouts, inspired by retro themes - zines, cyberpunk
+Grid goes retro ... // Exploring magazine and newspaper layouts, inspired by retro themes - zines, cyberpunk ...
+
+I am having the best time developing a new portfolio site with grid! I've been looking forward to getting into the grid-groove for a while, and I am learning that there is so much possibility with this approach. Currently I'm fine-tuning my grid skills by dialing in to the work of Jen Simmons.
 
 ![cover](https://user-images.githubusercontent.com/44883733/61174705-bf3f6080-a571-11e9-82d8-81142748832c.png)
 

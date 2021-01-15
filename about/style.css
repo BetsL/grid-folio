@@ -1,4 +1,5 @@
 
+
 /* ---------- GENERAL/ZINE SETUP ---------- */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Sans&display=swap');
@@ -6,13 +7,23 @@
 @import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barriecito|Roboto+Mono&display=swap');
 
+:root {
+    --light-grey:#f5f5f5;
+    --grey:#d3d3d3;
+    --dark-grey:#222;
+    --dark-accent-grey:#111;
+    --med-light-yellow:#e5d54f;
+
+    --content-box-shadow:5px 5px 36px 5px #000;;
+}
+
 html {
-    background-color: #d3d3d3;
+    background-color: var(--grey);
     height: 100%;
 }
 
 body {
-    color: #222;
+    color: var(--dark-grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +37,7 @@ body {
     grid-template-rows: 130px 2fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     height: 800px;
+    max-width: 85em;
     outline: 6px solid #121219;
     width: 95vw;
 }
@@ -33,10 +45,10 @@ body {
 /* ---------- TITLE ---------- */
 .title {
     align-items: end;
-    background: #111;
-    border-right: 1px solid #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
-    color: #d3d3d3;
+    background: var(--dark-accent-grey);
+    border-right: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+    color: var(--grey);
     display: grid;
     font-family: 'Barriecito', cursive;
     font-weight: normal;
@@ -80,9 +92,9 @@ body {
 .quote {
     align-self: end;
     background: rgba(0,0,0,0.5);
-    border-left: 10px solid #e5d54f;
+    border-left: 10px solid var(--med-light-yellow);
     bottom: 8%;
-    color: #e5d54f;
+    color: var(--med-light-yellow);
     font-size: calc(12px + 1.1vw);
     grid-row: 2;
     grid-column: 4;
@@ -96,7 +108,7 @@ body {
 
 /* ---------- CONTENT ---------- */
 .content1 {
-    box-shadow: 5px 5px 36px 5px #000000;
+    box-shadow: var(--content-box-shadow);
     display: block;
     font-family: 'Josefin Sans', sans-serif;
     grid-row: 2 / 4;
@@ -112,7 +124,7 @@ body {
 
 .content2 {
     align-items: end;
-    box-shadow: 5px 5px 36px 5px #000000;
+    box-shadow: var(--content-box-shadow);
     display: grid;
     font-family: 'Josefin Sans', sans-serif;
     grid-row: 3 / 4;
@@ -138,15 +150,15 @@ body {
 .content1 h1, p,
 .content2 p {
     background: #fff;
-    color: #222;
+    color: var(--dark-grey);
 }
 
 /* ---------- CONNECTION TO COLLECTION ---------- */
 .invite {
-    background: #d3d3d3;
-    border-bottom: 1px solid #222;
-    border-right: 5px solid #222;
-    color: #111;
+    background: var(--grey);
+    border-bottom: 1px solid var(--dark-grey);
+    border-right: 5px solid var(--dark-grey);
+    color: var(--dark-accent-grey);
     display: flex;
       align-items: flex-end;
       justify-content: flex-end;
@@ -165,7 +177,7 @@ body {
 }
 
 .invite:hover {
-    background-color: #e5d54f;
+    background-color: var(--med-light-yellow);
     transition: .7s;
 }
 
@@ -176,7 +188,7 @@ body {
 
 .invite a {
     text-decoration: none;
-    color: #111;
+    color: var(--dark-accent-grey);
 }
 
 
@@ -195,7 +207,7 @@ body {
 
 }
 
-@media only screen and (min-width: 240px) and (max-width: 750px) {
+@media only screen and (min-width: 240px) and (max-width: 51em) {
 
     body {
         margin: 10px auto;
@@ -240,7 +252,7 @@ body {
         grid-row: 4;
         grid-column: 1;
         padding-top: 50px;
-        box-shadow: 5px 5px 36px 5px #000000;
+        box-shadow: var(--content-box-shadow);
         display: block;
         background-image: radial-gradient(at top right #00ff00, gray);
         text-align: left;
@@ -266,11 +278,11 @@ body {
     }
 
     .invite {
-        background: #d3d3d3;
-        border-bottom: 1px solid #222;
-        border-right: 5px solid #222;
+        background: var(--grey);
+        border-bottom: 1px solid var(--dark-grey);
+        border-right: 5px solid var(--dark-grey);
 
-        color: #111;
+        color: var(--dark-accent-grey);
         display: flex;
           align-items: flex-end;
           justify-content: flex-end;

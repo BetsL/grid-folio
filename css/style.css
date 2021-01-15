@@ -1,4 +1,11 @@
 
+
+:root {
+	--light-pastel-purple:#b19cd9;
+	--blue-magenta:#9921e8;
+	--accent-gradient:linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
 /* ---------- GENERAL ---------- */
 body {
 	color: #fff;
@@ -18,25 +25,22 @@ body {
 
 main {
 	width: 100%;
+	max-width: 85em;
 }
 
 /* ---------- HEADER-NAV ---------- */
 .navbar {
   	font-size: 18px;
-  	/*background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);*/
-  	background-color: #9921e8;
-	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  	background-color: var(--blue-magenta);
+	background-image: var(--accent-gradient);
   	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-bottom: 1px solid #b19cd9;
+	border-bottom: 1px solid var(--light-pastel-purple);
   	padding-bottom: 10px;
 	position: relative;
   	width: 100%;
 }
 
 .main-nav {
-	/*background-color: #bf3a30;
-	background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
-  	border: 1px solid rgba(0, 0, 0, 0.2);*/
   	list-style-type: none;
   	display: none;
 	position: absolute;
@@ -57,7 +61,7 @@ main {
 }
 
 .nav-links:hover {
-	border-bottom: 1px solid #b19cd9;
+	border-bottom: 1px solid var(--light-pastel-purple);
 }
 
 .logo {
@@ -135,9 +139,8 @@ p {
   	width: 25px; /* set a specific slider handle width */
   	height: 25px; /* slider handle height */
   	border-radius: 50%;
-  	/*background: #b19cd9;*/
-  	background-color: #9921e8;
-	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  	background-color: var(--blue-magenta);
+	background-image: var(--accent-gradient);
   	cursor: pointer; /* cursor on hover */
 }
 
@@ -145,9 +148,8 @@ p {
   	width: 25px; /* set a specific slider handle width */
   	height: 25px; /* slider handle height */
   	border-radius: 50%;
-  	/*background: #b19cd9;*/
-  	background-color: #9921e8;
-	background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  	background-color: var(--blue-magenta);
+	background-image: var(--accent-gradient);
   	cursor: pointer; /* cursor on hover */
 }
 
@@ -178,7 +180,7 @@ p {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 51em) {
 
 	.navbar {
     	display: flex;

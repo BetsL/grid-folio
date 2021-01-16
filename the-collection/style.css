@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Barriecito|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 :root {
     --light-pastel-purple:#b19cd9;
@@ -24,6 +25,7 @@ body {
     background: var(--light-pastel-purple);
     color: var(--dark-grey);
     font-family: 'Droid Serif', serif;
+    /*font-family: 'PT Serif', serif;*/
     font-size: 16px;
     margin: 30px 2% 0 2%;
     /*margin: 30px auto 0 auto;*/

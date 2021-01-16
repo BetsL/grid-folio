@@ -1,6 +1,5 @@
 
 
-/* ---------- GENERAL/ZINE SETUP ---------- */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barriecito|IM+Fell+DW+Pica+SC|Josefin+Sans&display=swap');
@@ -17,6 +16,7 @@
     --content-box-shadow:5px 5px 36px 5px #000;;
 }
 
+/* ---------- general/zine setup ---------- */
 html {
     background-color: var(--grey);
     height: 100%;
@@ -42,7 +42,19 @@ body {
     width: 95vw;
 }
 
-/* ---------- TITLE ---------- */
+.back-arrow {
+    position: absolute;
+    color: #a9a9a9;
+    z-index: 9999;
+    padding: 1em;
+    font-size: 1em;
+    text-decoration: none;
+}
+.back-arrow:hover {
+    color: var(--med-light-yellow);
+}
+
+/* ---------- title ---------- */
 .title {
     align-items: end;
     background: var(--dark-accent-grey);
@@ -62,7 +74,7 @@ body {
     z-index: 3;
 }
 
-/* ---------- IMAGES ---------- */
+/* ---------- images ---------- */
 .image {
     background-image: url(img/synthwave.jpg);
     background-position: left center;
@@ -88,7 +100,7 @@ body {
     z-index: 2;
 }
 
-/* ---------- QUOTE ---------- */
+/* ---------- quote ---------- */
 .quote {
     align-self: end;
     background: rgba(0,0,0,0.5);
@@ -106,7 +118,7 @@ body {
     z-index: 3;
 }
 
-/* ---------- CONTENT ---------- */
+/* ---------- content ---------- */
 .content1 {
     box-shadow: var(--content-box-shadow);
     display: block;
@@ -153,7 +165,7 @@ body {
     color: var(--dark-grey);
 }
 
-/* ---------- CONNECTION TO COLLECTION ---------- */
+/* ---------- @collection ---------- */
 .invite {
     background: var(--grey);
     border-bottom: 1px solid var(--dark-grey);
@@ -191,10 +203,7 @@ body {
     color: var(--dark-accent-grey);
 }
 
-
-/* ---------- MEDIA QUERIES ---------- */
-
-
+/* ---------- @media ---------- */
 @media only screen and (min-width: 240px) and (max-width: 479px) {
 
     .quote {
@@ -232,7 +241,7 @@ body {
         margin: 0;
     }
 
-    /* ---------- QUOTE ---------- */
+    /* ---------- quote ---------- */
     .quote {
         bottom: 11%;
         font-size: calc(12px + 2.3vw);

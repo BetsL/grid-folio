@@ -3,52 +3,49 @@
 <head>
   <meta charset="utf-8">
 	<title>Cover Story</title>
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
+	<script src="https://kit.fontawesome.com/ba5343be40.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-	<div class="page">
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" class="contact">Elizabeth Harkins
+    </a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="https://www.linkedin.com/in/emharkins/" target="_blank" class="nav-links">in</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_lizzith" target="_blank" class="nav-links">chirp</a>
+        </li>
+        <li>
+          <a href="https://github.com/elizabethharkins" target="_blank" class="nav-links">hub</a>
+        </li>
+        <li>
+          <a href="about/index.html" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="the-collection/index.html" class="nav-links">The Collection</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="effects-container">
+      <div class="fill-area"></div>
+        <main>
+            <p class="content"><span id="output"></span></p>
+            <div class="slidecontainer">
+              <label id="range-value" for="range">0</label>
+              <input type="range" name="range" min="0" max="100" value="0" class="slider" id="myStory"/>
+            </div>
+        </main>
+    </div>
+  </div>
 
-		<nav class="navbar">
-    		<span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-    		<a href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" class="logo">Elizabeth Harkins<i class="far fa-paper-plane"></i></a>
-    		<ul class="main-nav" id="js-menu">
-      			<li>
-        			<a href="https://www.linkedin.com/in/emharkins/" target="_blank" class="nav-links">in</a>
-      			</li>
-      			<li>
-        			<a href="https://twitter.com/_lizzith" target="_blank" class="nav-links">chirp</a>
-      			</li>
-      			<li>
-        			<a href="https://github.com/elizabethharkins" target="_blank" class="nav-links">hub</a>
-      			</li>
-      			<li>
-        			<a href="about/index.html" class="nav-links">About</a>
-      			</li>
-      			<li>
-        			<a href="the-collection/index.html" class="nav-links">The Collection</a>
-      			</li>
-    		</ul>
-  		</nav>
-
-	  	<main>
-	  		<p><span id="output"></span></p>
-	  		<div class="slidecontainer">
-	  			<input type="range" min="0" max="21" step="1" value="0" class="slider" id="myStory">
-	  			<div class="tag">
-	  				<h2 class="prev">Less Story</h2>
-	  				<h2 class="next">More Story</h2>
-	  			</div>
-	  		</div>
-	  	</main>
-
-	</div>
-
-<script src="js/cover.js" type="module"></script>
+<script src="js/cover-pg/cover.js" type="module"></script>
 </body>
 </html>

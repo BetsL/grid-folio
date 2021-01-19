@@ -13,7 +13,7 @@
     --headline-padding:padding: 10px 0 10px 0;
 }
 
-/* ---------- GENERAL STYLES ---------- */
+/* ---------- general ---------- */
 html,
 body {
     margin: 0;
@@ -41,7 +41,7 @@ ul {
     list-style-type: none;
 }
 
-/* ---------- HEADING ---------- */
+/* ---------- heading ---------- */
 .header {
     display: flex;
         justify-content: center;
@@ -105,12 +105,12 @@ h2 {
     width: 60%;
 }
 
-/* ---------- CONTENT ---------- */
+/* ---------- content ---------- */
 .content {
     display: grid;
 }
 
-/* ---------- COLUMNS, GENERAL ----------*/
+/* ---------- columns, general ----------*/
 .columns {
     border-bottom: 10px solid var(--charcoal-grey);
     display: grid;
@@ -130,7 +130,7 @@ h2 {
     transition: all .7s;
 }
 
-/* ---------- COLUMNS, EACH ----------*/
+/* ---------- columns, each ----------*/
 .one {
     border-bottom: var(--standard-column-border);
     border-left: var(--standard-column-border);
@@ -255,7 +255,7 @@ h2 {
     margin-right: -20px;
 }
 
-/* ---------- COLUMNS, HEADLINES ---------- */
+/* ---------- columns, headlines ---------- */
 .column .headline {
     text-align: center;
     line-height: normal;
@@ -330,7 +330,7 @@ h2 {
     margin: 0 auto;
 }
 
-/* ---------- COLUMNS, PARTICULARS ----------*/
+/* ---------- columns, particulars ----------*/
 .links {
     display: flex;
         justify-content: center;
@@ -385,7 +385,7 @@ h2 {
     font-size: 12px;
 }
 
-/* ---------- MEDIA QUERIES ---------- */
+/* ---------- @media ---------- */
 @media only screen and (min-width: 85em) {
     body {
          margin: 30px auto 0 auto;
@@ -394,7 +394,7 @@ h2 {
 
 @media only screen and (max-width: 1300px) {
 
-    /* ---------- HEADING ---------- */
+    /* ---------- heading ---------- */
     h1 {
         font-size: 7em;
     }
@@ -412,7 +412,7 @@ h2 {
         padding-left: 2%;
     }
 
-    /* ---------- FIN ---------- */
+    /* ---------- fin ---------- */
     .six {
         padding: 0;
     }
@@ -433,7 +433,7 @@ h2 {
 
 @media only screen and (min-width: 900px) and (max-width: 1100px) {
 
-    /* ---------- HEADING ---------- */
+    /* ---------- heading ---------- */
      h1 {
         font-size: 5.5em;
     }
@@ -452,12 +452,12 @@ h2 {
         width: 66%;
     }
 
-     /* ---------- COLUMNS, EACH ----------*/
+     /* ---------- columns, each ----------*/
     .one {
         font-size: 1.2em;
     }
 
-    /* ---------- FIN ---------- */
+    /* ---------- fin ---------- */
     .six {
         padding: 0;
     }
@@ -480,7 +480,7 @@ h2 {
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
 
-     /* ---------- HEADING ---------- */
+     /* ---------- heading ---------- */
      h1 {
         font-size: 3.9em;
         margin-bottom: 10px;
@@ -509,7 +509,7 @@ h2 {
         font-size: 22px;
     }
 
-    /* ---------- COLUMNS, GENERAL ----------*/
+    /* ---------- columns, general ----------*/
     .columns {
         grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
         grid-template-rows: .5fr .5fr .5fr .5fr .40fr;
@@ -517,7 +517,7 @@ h2 {
         margin-bottom: auto;
     }
 
-    /* ---------- COLUMNS, EACH ----------*/
+    /* ---------- columns, each ----------*/
     .one {
         border-bottom: none;
         border-left: none;
@@ -593,7 +593,7 @@ h2 {
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
 
-    /* ---------- HEADING ---------- */
+    /* ---------- heading ---------- */
     h1 {
         font-size: 3.9em;
         margin-bottom: 10px;
@@ -613,7 +613,7 @@ h2 {
         width: 100%;
     }
 
-    /* ---------- COLUMNS, GENERAL ----------*/
+    /* ---------- columns, general ----------*/
     .columns {
             grid-template-columns: 95vw;
             grid-template-rows: repeat(7, .5fr);
@@ -621,7 +621,7 @@ h2 {
         margin-bottom: auto;
     }
 
-    /* ---------- COLUMNS, EACH ----------*/
+    /* ---------- columns, each ----------*/
     .one {
         border-bottom: var(--standard-column-border);
         border-left: none;
@@ -706,7 +706,7 @@ h2 {
 }
 
 @media only screen and (min-width: 240px) and (max-width: 479px) {
-    /* ---------- HEADING ---------- */
+    /* ---------- heading ---------- */
     h1 {
         font-size: 2em;
         line-height: 42px;
@@ -732,7 +732,7 @@ h2 {
         width: 100%;
     }
 
-    /* ---------- COLUMNS, GENERAL ----------*/
+    /* ---------- columns, general ----------*/
     .columns {
         grid-template-columns: 95vw;
         grid-template-rows: repeat(7, .5fr);
@@ -740,7 +740,7 @@ h2 {
         margin-bottom: auto;
     }
 
-    /* ---------- COLUMNS, EACH ----------*/
+    /* ---------- columns, each ----------*/
     .one {
         border-bottom: var(--standard-column-border);
         border-left: none;

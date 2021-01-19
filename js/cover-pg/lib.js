@@ -4,6 +4,7 @@ import { input, output, rangeValueElement, fillAreaElement } from "./elements.js
 import storyLines from "./data.js";
 
 export function slideCover() {
+
 	output.textContent = storyLines[this.value];
   
   	const hueRotate = "hue-rotate(" + input.value + "deg)";
@@ -17,7 +18,15 @@ export function slideCover() {
   	fillAreaElement.style.width = (100-input.value) + "vw";
   	fillAreaElement.style.filter = hueRotate;
 
-  	console.log(input.value);
+  	if (input.value === "100") {
+  		output.textContent = "Thanks for visiting!";
+  		return;
+  	}
+  	else {
+  		output.textContent = storyLines[this.value];
+  	}
+
+  	// console.log(input.value);
 }
 
 

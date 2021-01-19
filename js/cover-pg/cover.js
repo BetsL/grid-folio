@@ -3,12 +3,12 @@
 import { mainNav, navBarToggle } from "./elements.js";
 import { init } from "./init.js";
 
-/* ---------- NAV ---------- */
+/* ---------- nav ---------- */
 navBarToggle.addEventListener("click", function() {
   	mainNav.classList.toggle("active");
 });
 
-/* ---------- SLIDER + STORY ---------- */
+/* ---------- slider + story ---------- */
 (function()
 {
   if( window.localStorage )
@@ -21,7 +21,6 @@ navBarToggle.addEventListener("click", function() {
     else
       localStorage.removeItem("firstLoad");
   }
-  console.log("this worked");
 })();
 
 init();

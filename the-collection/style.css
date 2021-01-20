@@ -5,6 +5,7 @@
 
 :root {
     --light-pastel-purple:#b19cd9;
+    --blue-magenta:#9921e8;
     --grey:#d3d3d3;
     --dark-grey:#222;
     --charcoal-grey:#2f2f2f;
@@ -388,7 +389,34 @@ h2 {
 /* ---------- @media ---------- */
 @media only screen and (min-width: 85em) {
     body {
-         margin: 30px auto 0 auto;
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body.shine {
+        background: var(--light-pastel-purple);
+        background-image: linear-gradient(to right, var(--light-pastel-purple) 0%, #d8ccec 35%, var(--light-pastel-purple) 70%, var(--light-pastel-purple) 100%);
+        /*background-repeat: no-repeat;*/
+        /*background-size: 800px 104px; */
+        /*display: inline-block;*/
+        position: relative; 
+      
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards; 
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-name: placeholderShimmer;
+        -webkit-animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes placeholderShimmer {
+        0% {
+            background-position: -468px 0;
+        }
+      
+        100% {
+            background-position: 468px 0; 
+        }
     }
 }
 

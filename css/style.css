@@ -9,7 +9,7 @@
 	--blue-magenta:#9921e8;
 	--accent-gradient:linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
 	--white:#fff;
-	--fill-area-bg-color:#333838;
+	--fill-area-bg-color:#000;		/* #333838; */
 	--main-area-bg-color:linear-gradient(to right, #ff5c5c, #ffa860, #e3dc44, #57b02a);
 }
 
@@ -85,67 +85,57 @@ main {
 .main-nav {
 	list-style-type: none;
 	display: none;
-	/*display: none;
-	position: absolute;
-	right: 0;
-	top: 75%;*/
 	width: 100%;
 }
-.main-nav li {
-	/*background: rgba(255,255,255, 0.3);*/
-	text-align: right;
-	/*margin: 10px 20px;*/
+.main-nav.active {
+	top: 60px;
+    background: rgba(0,0,0,0.9);
+    z-index: 999999;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
 
+.main-nav li {
+	text-align: right;
 	background: rgba(255,255,255, 0.1);
     text-align: right;
-    /*margin: 8px 0;*/
     margin-bottom: 0.8em;
     padding: 0.25em 0;
     width: fit-content;
 }
-.main-nav li:hover:nth-child(odd),
-.main-nav li:active:nth-child(odd) {
-	background: var(--light-pastel-purple);
+.main-nav li.active {
+	border-bottom-width: 0.125em;
+    border-bottom: 2px solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-image-source: linear-gradient(90deg, rgba(255,255,255, 0.5), rgba(255,255,255, 1));
+    border-image-slice: 1;
+    font-weight: 700;
 }
-.main-nav li:hover:nth-child(even),
-.main-nav li:active:nth-child(even) {
-	background: var(--blue-magenta);
+.main-nav li:hover,
+.main-nav li:active {
+	background: transparent;
+	border-image-source: var(--main-area-bg-color);
 }
 .nav-links {
 	margin-right: 20px;
 	margin-left: 20px;
 	text-decoration: none;
 }
-/*.nav-links:hover {
-	border-bottom: 1px solid var(--light-pastel-purple);
-}*/
-
-.main-nav.active {
-	/*display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	z-index: 2;*/
-
-	top: 60px;
-    background: rgba(0,0,0,0.9);
-    z-index: 999999;
-    height: 100vh;
-    position: absolute;
-    /*display: block;*/
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-}
 
 /* ---------- main-content ---------- */
 .fill-area  {
-	position: absolute;
-	top: 0;
+	/*position: absolute;*/
+	/*top: 0;*/
 	bottom: -72px;
-	left: 0;
+	/*left: 0;*/
 	z-index: 0;
-	width: 100vw;
+	/*width: 100vw;*/
 	background: var(--fill-area-bg-color);
 	box-shadow: inset 3px 3px 5px -1px #111;
 	pointer-events: none;
@@ -159,8 +149,6 @@ main {
 
     width: 100%;
     height: 100%;
-
-	/*display: none;*/
 }
 
 main {
@@ -184,6 +172,9 @@ p.content {
 	height: 200px;
 	width: 33%;
 	z-index: 99999;
+}
+#output.accent {
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .slidecontainer {
@@ -256,7 +247,6 @@ label::after {
 
 /* ---------- @media ---------- */
 @media screen and (max-width: 52em) {
-
 	.navbar {
 		height: 60px;
 	}
@@ -274,13 +264,11 @@ label::after {
 		margin: -2rem 0 1rem;
 	}
 	.slider {
-		/*margin-bottom: 5em;*/
 		width: 85vw;
 	}
 }
 
 @media screen and (max-width: 33.250em) {
-	
 	p.content {
 		margin: -8em auto 0 auto;
 	}
@@ -299,27 +287,6 @@ label::after {
 }
 
 @media screen and (min-width: 52em) {
-
-	.main-nav li:hover:nth-child(odd),
-	.main-nav li:active:nth-child(odd) {
-		background: rgba(255,255,255, 0.1);
-	}
-	.main-nav li:hover:nth-child(even),
-	.main-nav li:active:nth-child(even) {
-		background: rgba(255,255,255, 0.1);
-	}
-	.contact {
-		font-size: 1.375em;
-	}
-	.contact:hover,
-	.nav-links:hover {
-  		color: rgba(255, 255, 255, 1);
-	  	border-bottom: none;
-	}
-	.main-nav li:hover {
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	}
-
 	.navbar {
   		display: flex;
   		justify-content: space-between;
@@ -330,7 +297,11 @@ label::after {
   		display: none;
 	}
 
-  	.main-nav {
+	.contact {
+		font-size: 1.375em;
+	}
+
+	.main-nav {
 		border: none;
   		display: flex;
   		margin-right: 30px;
@@ -341,15 +312,28 @@ label::after {
 	  	top: 37%;
 	  	width: 100%;
 	}
-
 	.main-nav li {
   		margin: 0;
+  		transition: all .6s ease;
+	}
+	.main-nav li:hover,
+	.main-nav li:active {
+		background: rgba(255,255,255, 0.1);
+		border-image-source: none;
+	}
+	
+	.contact:hover,
+	.nav-links:hover {
+  		color: rgba(255, 255, 255, 1);
+	  	border-bottom: none;
+	}
+	.main-nav li:hover {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 
 	.nav-links {
   		margin-left: 20px;
 	}
-
 }
 
 

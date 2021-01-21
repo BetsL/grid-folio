@@ -20,10 +20,12 @@ export function slideCover() {
 
   	if (input.value === "100") {
   		output.textContent = "Thanks for visiting!";
+      output.classList.add("accent");
   		return;
   	}
   	else {
   		output.textContent = storyLines[this.value];
+      output.classList.remove("accent");
   	}
 
   	// console.log(input.value);

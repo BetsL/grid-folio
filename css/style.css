@@ -58,11 +58,19 @@ main {
 
 .navbar-toggle {
   	position: absolute;
-  	top: 13px;
+  	/*top: 13px;*/
   	right: 20px;
   	cursor: pointer;
   	color: rgba(255, 255, 255, 0.8);
   	font-size: 1.5em;
+
+	top: 0;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 2.5rem;
+	transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.navbar-toggle.active {
+	transform: rotate(45deg);
 }
 
 .contact {
@@ -270,7 +278,7 @@ label::after {
 
 @media screen and (max-width: 33.250em) {
 	p.content {
-		margin: -8em auto 0 auto;
+		margin: -6em auto 0 auto;
 	}
 	.slidecontainer {
 		margin: 3vh auto;
